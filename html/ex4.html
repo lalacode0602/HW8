@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <form>
+    <h1>Sample Form</h1>
+    <p>
+      <label for="name">Your name</label>:
+        <input type="text" name="name" id="name" required>
+    </p>
+    <p>
+      <label for="emailAddress">Email</label>:
+      <input type="email" name="emailAddress" id="emailAddress" required placeholder="name@domain">
+    </p>
+    <p>
+      <label for="payment">Payment Type</label>:<br>
+      <input type="radio" name="payment" id="cash" value="Cash">
+      <label for="cash">Cash</label>
+      <br>
+      <input type="radio" name="payment" id="credit" value="Credit Card">
+      <label for="credit">Credit Card</label>
+      <br>
+      <input type="radio" name="payment" id="google" value="Google Pay">
+      <label for="google">Google Pay</label>
+      <br>
+      <input type="radio" name="payment" id="apple" value="Apple Pay">
+      <label for="apple">Apple Pay</label>
+      <br>
+    </p>
+    <p>
+      <input type="checkbox" name="promo" id="promo">
+      <label for="promo">Sign me up for special promotions</label>
+    </p>
+    <p>
+      <label for="location">Preferred Location</label>:
+      <select name="location" id="location">
+        <option value="LA" selected>Los Angeles</option>
+        <option value="OC">Orange County</option>
+        <option value="RS">Reverside</option>
+        <option value="SD">San Diego</option>
+      </select>
+    </p>
+  
+    <input type="submit" value="Submit">
+    <input type="reset" value="Cancel">
+  </form>
+  <div>
+    <table id="output"></table>
+  </div>
+ <script src="../ex4.js"></script>
+</body>
+</html>
